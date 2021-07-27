@@ -1,28 +1,3 @@
-# webpack-portfolio
-
-Webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
-
-```bash
-yarn add webpack webpack-cli -D --latest --exact
-
-yarn add babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime -D --latest --exact
-
-yarn add html-webpack-plugin -D --latest --exact
-
-yarn add css-loader mini-css-extract-plugin -D --latest --exact
-
-yarn add stylus stylus-loader -D --latest --exact
-
-yarn add copy-webpack-plugin -D --latest --exact
-
-yarn add url-loader file-loader -D --latest --exact
-
-yarn add css-minimizer-webpack-plugin terser-webpack-plugin -D --latest --exact
-```
-
-- **webpack.config.js**
-
-```jsx
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -109,4 +84,3 @@ module.exports = {
     ],
   },
 };
-```
